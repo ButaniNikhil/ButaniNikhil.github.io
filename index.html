@@ -12,9 +12,7 @@
 <body>
 
 		<div class="box" id="login">
-	    	<h1 align="center">Login Form</h1>
-	    	<!-- <form role="form"> -->
-
+	    	<h1>Login Form</h1>
 	      		<div class="inputBox">
 	        		<input type="text" id="login_email" name="email" autocomplete="off" required>
 	        		<label>Email</label>
@@ -26,12 +24,12 @@
 		      	</div>
 
 			    <input type="submit" name="login" value="Login" onclick="Login()">
-				<h5 id="createAccount" >you haven't account? <span onclick="CreateAcc()">create here</span></h5>
-		    <!-- </form> -->
+				<h5 id="createAccount" >New User ? <span onclick="CreateAcc()">Signup here</span></h5>
+				<h5 class="err-msg" id="err-login"></h5>
 	  	</div>
 
 		<div class="box" id="register">
-	    	<h1 >Sign Up</h1>
+	    	<h1>Sign Up</h1>
 	    	<!-- <form role="form"> -->
 
 	      		<div class="inputBox">
@@ -51,7 +49,9 @@
 				  
 
 			    <input type="submit" name="signup" value="Sign Up" onclick="signUp()">
-				<h5 id="createAccount" >you have account? <span onclick="loginAcc()">login here</span></h5>
+				<h5 id="createAccount" >Already Register? <span onclick="loginAcc()">Login here</span></h5>
+				<h5 class="err-msg" id="err-signup"></h5>
+
 
 		    <!-- </form> -->
 	  	</div>

@@ -46,7 +46,7 @@ body {
   letter-spacing: 1px;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #dedede;
   pointer-events: none;
   transition: 0.5s;
 }
@@ -57,9 +57,7 @@ body {
   color: #03a9f4;
   font-size: 12px;
 }
-.register {
-  color: #03a9f4;
-}
+
 .box input[type="submit"] {
   background: transparent;
   border: 2px solid white;
@@ -68,22 +66,21 @@ body {
   padding: 10px 20px;
 }
 
-.box button[type="submit"] {
-  border: none;
-  background: transparent;
-  border-bottom: 2px solid white;
-  color: #fff;
-}
-
-a {
-  color: #fff;
-  margin-left: 2%;
+input[type="submit"]:active{
+  background: #fff;
+  color: #000;
 }
 
 h5{
-  color: #fff;
+  color: #dedede;
 }
 span{
   color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 3px;
   cursor: pointer;
+}
+
+.err-msg{
+  color: indianred;
 }
